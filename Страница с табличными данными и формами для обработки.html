@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,18 +9,423 @@
         <h1>Табличные данные о подводных лодках</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="Страница с подробным описанием подлодки.html">Подробности о подлодке</a></li>
+                <li><a href="index.html">Главная</a></li>                
                 <li><a href="Страница с табличными данными и формами для обработки.html">Табличные данные</a></li>
             </ul>
         </nav>
     </header>
+    
+   <section>
+        <details>
+            <summary>Настройка графика</summary>
+            <form>
+                <label for="график">Выберите график:</label>
+                <select id="график" name="график">
+                    <option value="длина">Длина</option>
+                    <option value="вес">Водоизмещение</option>
+                    <option value="скорость">Скорость</option>
+                </select>
+                <label for="график_тип">Тип графика:</label>
+                <select id="график_тип" name="график_тип">
+                    <option value="линейный">Линейный</option>
+                    <option value="столбчатый">Столбчатый</option>
+                </select>
+                <p>Параметры отображения:</p>
+                <input type="checkbox" id="отобразить_значения" name="отобразить_значения" value="значения">
+                <label for="отобразить_значения">Отобразить значения</label>
+                <br>
+                <input type="checkbox" id="отобразить_подписи" name="отобразить_подписи" value="подписи">
+                <label for="отобразить_подписи">Отобразить подписи</label>
+            </form>
+        </details>
 
+        <details>
+            <summary>Сортировка</summary>
+            <form>
+                <label for="сортировка">Сортировка:</label>
+                <select id="сортировка" name="сортировка">
+                    <option value="по возрастанию">По возрастанию</option>
+                    <option value="по убыванию">По убыванию</option>
+                </select>
+            </form>
+        </details>
+
+        <details>
+            <summary>Фильтр по типу</summary>
+            <form>
+                <label for="фильтр">Фильтр по типу:</label>
+                <select id="фильтр" name="фильтр">
+                    <option value="Все">Все</option>
+                    <option value="Дизель-электрическая">Дизель-электрическая</option>
+                    <option value="Атомная">Атомная</option>
+                </select>
+            </form>
+        </details>
+
+        <input type="submit" value="Применить">
+    </section>
+    
     <section>
         <h2>Таблица данных о подводных лодках</h2>
-        <table>
-            <!-- Добавьте данные в таблицу. Не менее 50 строк. -->
-        </table>
+        <table border="1">
+    <tr>
+        <th>Название</th>
+        <th>Тип</th>
+        <th>Длина (м)</th>
+        <th>Водоизмещение (т)</th>
+        <th>Скорость (узлов)</th>
+    </tr>
+    <tr>
+        <td>HMS Trafalgar</td>
+        <td>Атомная</td>
+        <td>85</td>
+        <td>5,200</td>
+        <td>32</td>
+    </tr>
+    <tr>
+        <td>USS Ohio</td>
+        <td>Атомная</td>
+        <td>170</td>
+        <td>18,750</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>Kilo-class</td>
+        <td>Дизель-электрическая</td>
+        <td>72</td>
+        <td>3,076</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Akula-class</td>
+        <td>Атомная</td>
+        <td>110</td>
+        <td>13,000</td>
+        <td>35</td>
+    </tr>
+    <tr>
+        <td>Virginia-class</td>
+        <td>Атомная</td>
+        <td>115</td>
+        <td>7,800</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>Los Angeles-class</td>
+        <td>Атомная</td>
+        <td>110</td>
+        <td>6,900</td>
+        <td>32</td>
+    </tr>
+    <tr>
+        <td>Yasen-class</td>
+        <td>Атомная</td>
+        <td>139</td>
+        <td>13,800</td>
+        <td>35</td>
+    </tr>
+    <tr>
+        <td>Seawolf-class</td>
+        <td>Атомная</td>
+        <td>138</td>
+        <td>9,150</td>
+        <td>35</td>
+    </tr>
+    <tr>
+        <td>Kuznetsov-class</td>
+        <td>Атомная</td>
+        <td>305</td>
+        <td>43,000</td>
+        <td>29</td>
+    </tr>
+    <tr>
+        <td>Type 212-class</td>
+        <td>Дизель-электрическая</td>
+        <td>56</td>
+        <td>1,450</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Type 214-class</td>
+        <td>Дизель-электрическая</td>
+        <td>65</td>
+        <td>1,830</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Delta-class</td>
+        <td>Атомная</td>
+        <td>175</td>
+        <td>18,200</td>
+        <td>24</td>
+    </tr>
+    <tr>
+        <td>Type 039-class</td>
+        <td>Дизель-электрическая</td>
+        <td>76</td>
+        <td>2,725</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>Gato-class</td>
+        <td>Дизель-электрическая</td>
+        <td>95</td>
+        <td>1,525</td>
+        <td>21</td>
+    </tr>
+    <tr>
+        <td>K-278 Komsomolets</td>
+        <td>Атомная</td>
+        <td>118</td>
+        <td>6,500</td>
+        <td>44</td>
+    </tr>
+     <tr>
+        <td>K-222 Papa-class</td>
+        <td>Атомная</td>
+        <td>138</td>
+        <td>13,000</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>Le Triomphant-class</td>
+        <td>Атомная</td>
+        <td>138</td>
+        <td>14,335</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>Type 216-class</td>
+        <td>Дизель-электрическая</td>
+        <td>57</td>
+        <td>1,450</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Delta III-class</td>
+        <td>Атомная</td>
+        <td>155</td>
+        <td>14,700</td>
+        <td>24</td>
+    </tr>
+    <tr>
+        <td>Sōryū-class</td>
+        <td>Дизель-электрическая</td>
+        <td>84</td>
+        <td>4,200</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Type 093-class</td>
+        <td>Атомная</td>
+        <td>134</td>
+        <td>8,140</td>
+        <td>28</td>
+    </tr>
+    <tr>
+        <td>U-Boot-Klasse 212A</td>
+        <td>Дизель-электрическая</td>
+        <td>56</td>
+        <td>1,450</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Kilo-class</td>
+        <td>Дизель-электрическая</td>
+        <td>74</td>
+        <td>2,300</td>
+        <td>17</td>
+    </tr>
+    <tr>
+        <td>Type 039A-class</td>
+        <td>Дизель-электрическая</td>
+        <td>76</td>
+        <td>2,725</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>Ohio-class</td>
+        <td>Атомная</td>
+        <td>170</td>
+        <td>16,764</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>Type 091-class</td>
+        <td>Атомная</td>
+        <td>128</td>
+        <td>8,300</td>
+        <td>28</td>
+    </tr>
+    <tr>
+        <td>Astute-class</td>
+        <td>Атомная</td>
+        <td>97</td>
+        <td>7,800</td>
+        <td>29</td>
+    </tr>
+    <tr>
+        <td>Los Angeles-class</td>
+        <td>Атомная</td>
+        <td>110</td>
+        <td>6,900</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>Xia-class</td>
+        <td>Атомная</td>
+        <td>126</td>
+        <td>8,000</td>
+        <td>29</td>
+    </tr>
+    <tr>
+        <td>Alfa-class</td>
+        <td>Атомная</td>
+        <td>81</td>
+        <td>3,500</td>
+        <td>42</td>
+    </tr>
+    <tr>
+        <td>Seawolf-class</td>
+        <td>Атомная</td>
+        <td>108</td>
+        <td>9,138</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>Borei-class</td>
+        <td>Атомная</td>
+        <td>170</td>
+        <td>24,000</td>
+        <td>29</td>
+    </tr>
+    <tr>
+        <td>Тайфун-class</td>
+        <td>Атомная</td>
+        <td>175</td>
+        <td>48,000</td>
+        <td>27</td>
+    </tr>
+    <tr>
+        <td>Виргиния-class</td>
+        <td>Атомная</td>
+        <td>115</td>
+        <td>7,800</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>Тип 093G Shang-class</td>
+        <td>Атомная</td>
+        <td>110</td>
+        <td>7,000</td>
+        <td>29</td>
+    </tr>
+    <tr>
+        <td>Тайп 033-class</td>
+        <td>Дизель-электрическая</td>
+        <td>76</td>
+        <td>2,350</td>
+        <td>16</td>
+    </tr>
+    <tr>
+        <td>Тайп 032-class</td>
+        <td>Дизель-электрическая</td>
+        <td>78</td>
+        <td>2,500</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td>Тайп 033G-class</td>
+        <td>Дизель-электрическая</td>
+        <td>77</td>
+        <td>2,450</td>
+        <td>17</td>
+    </tr>
+    <tr>
+        <td>Тайп 031-class</td>
+        <td>Дизель-электрическая</td>
+        <td>77</td>
+        <td>2,300</td>
+        <td>17</td>
+    </tr>
+    <tr>
+        <td>Тайп 039-class</td>
+        <td>Дизель-электрическая</td>
+        <td>76</td>
+        <td>2,725</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>Тайп 039A-class</td>
+        <td>Дизель-электрическая</td>
+        <td>77</td>
+        <td>2,725</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>Тайп 039B-class</td>
+        <td>Дизель-электрическая</td>
+        <td>76</td>
+        <td>2,300</td>
+        <td>17</td>
+    </tr>
+    <tr>
+        <td>Тайп 032G-class</td>
+        <td>Дизель-электрическая</td>
+        <td>78</td>
+        <td>2,500</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td>Тайп 032A-class</td>
+        <td>Дизель-электрическая</td>
+        <td>77</td>
+        <td>2,450</td>
+        <td>17</td>
+    </tr>
+    <tr>
+        <td>Тайп 033K-class</td>
+        <td>Дизель-электрическая</td>
+        <td>77</td>
+        <td>2,300</td>
+        <td>16</td>
+    </tr>
+    <tr>
+        <td>Тайп 093-class</td>
+        <td>Атомная</td>
+        <td>110</td>
+        <td>7,000</td>
+        <td>29</td>
+    </tr>
+    <tr>
+        <td>Тайп 095-class</td>
+        <td>Атомная</td>
+        <td>108</td>
+        <td>8,140</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Тайп 096-class</td>
+        <td>Атомная</td>
+        <td>139</td>
+        <td>11,000</td>
+        <td>27</td>
+    </tr>
+    <tr>
+        <td>Тайп 97-class</td>
+        <td>Атомная</td>
+        <td>130</td>
+        <td>7,100</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>Тайп 98-class</td>
+        <td>Атомная</td>
+        <td>127</td>
+        <td>7,600</td>
+        <td>25</td>
+    </tr>
+</table>
         <form>
             <!-- Добавьте формы для настройки графика, сортировки и фильтров. -->
         </form>
