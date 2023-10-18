@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,24 +19,21 @@
    <section>
         <details>
             <summary>Настройка графика</summary>
+            
             <form>
-                <label for="график">Выберите график:</label>
-                <select id="график" name="график">
-                    <option value="длина">Длина</option>
-                    <option value="вес">Водоизмещение</option>
-                    <option value="скорость">Скорость</option>
-                </select>
-                <label for="график_тип">Тип графика:</label>
-                <select id="график_тип" name="график_тип">
-                    <option value="линейный">Линейный</option>
-                    <option value="столбчатый">Столбчатый</option>
-                </select>
-                <p>Параметры отображения:</p>
-                <input type="checkbox" id="отобразить_значения" name="отобразить_значения" value="значения">
-                <label for="отобразить_значения">Отобразить значения</label>
-                <br>
-                <input type="checkbox" id="отобразить_подписи" name="отобразить_подписи" value="подписи">
-                <label for="отобразить_подписи">Отобразить подписи</label>
+                <p>
+                Значение по оси X:<br>
+                <input type="radio" name="type" value="atom">Тип<br>
+                </p>
+                <p>
+                Результат:<br>
+                <input type="checkbox" name="type" value="dlina">Максимальная длина<br>
+                <input type="checkbox" name="type" value="voda">Максимальное водоизмещение<br>
+                <input type="checkbox" name="type" value="skorost">Максимальная скорость
+                </p>
+                
+                
+                
             </form>
         </details>
 
