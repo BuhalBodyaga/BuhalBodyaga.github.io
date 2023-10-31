@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#background {
+    background-image: url('фоновый рисунок.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 30vh;
+}
+
+#menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu li {
+    margin-bottom: 10px;
+    padding: 5px 70px 5px 10px;
+    color: white;
+    display: inline-block; /* Делаем миниблоки меню строчными */
+    margin-right: 10px; /* Определяем расстояние между ними */
+font-size: 20px;
+}
+#aa {
+background: rgba(0, 0, 0, 0.2);
+}
+
+#content {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    padding: 20px;
+    color: white;
+    width: 80%;
+}
+
+#content h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+#content p {
+    text-align: center;
+    font-size: 16px;
+}
+#search-container {
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+}
+
+#search-box {
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#search-input {
+    border: none;
+    width: 80%;
+    padding: 5px;
+}
+
+#search-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.header {
+    width: 23%;
+    height: 70%;
+    float: left;
+}
+
+.header p {
+    height: 73%;   
+    overflow: auto;
+    margin: 5px;
+}
+.header h2 {
+    height: auto;   
+    margin: 5px;
+}
+
+.image {
+    width: 23%;
+    height: 70%;
+    float: left;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    margin: 5px;
+}
+
+.mini-block {
+    width: 46%;
+    height: 14%;
+    float: left;
+    margin: 0.5%; /* Добавим небольшой отступ между блоками */
+}
+
+
+.mini-block img {
+    height: 40%; /* Рисунок занимает 40% высоты блока */
+    width: 50%; /* Рисунок занимает половину ширины блока */
+    margin: 0; 
+    float: left;
+}
+
+.mini-block p {
+
+    margin: 1% 1% 0 1%; /* Небольшие отступы снизу и по бокам текста */
+    height: 40%; /* Текст занимает 40% высоты блока */
+    overflow: auto;
+}
+
