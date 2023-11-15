@@ -1,0 +1,79 @@
+.main{
+    display: grid;
+    grid-template-rows: 25vh 70vh 5vh;
+    margin: 0;
+}
+.main > .background{
+    display: grid;
+    background-image: url("фоновый рисунок.jpg");
+    grid-template-columns: 2fr 3fr 2fr;
+}
+.background > .item{
+    display: grid;
+    padding: 10px;
+    margin: 5px;
+    justify-content:center;
+    align-content:center;
+    height: 22vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.item > .size{
+    justify-items: start;
+    align-items: center;
+    padding-left: 5px;
+    display: grid;
+    width: 90%;
+    height: 90%;
+    font-size: 28px;
+    font-weight: bold;
+}
+#special{
+    background: rgba(0, 0, 0, 0.3);
+}
+.main > .content {
+    width: 70%;
+    padding-top: 10px;
+    margin: 0 auto;
+    background-color: brown;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.content  .item {
+    width: 400px;
+    height: 200px;
+    background-color: blueviolet;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.item img {
+    display: block;
+    background-color: chocolate;
+    margin: 0 auto;
+    width: 47%;
+}
+
+.item .grid-text{
+    display: block;
+    height: 100%;
+    background-color: gold;
+    overflow: scroll;
+}
+.grid-text p{
+    margin: 0;
+}
+.grid-text h2{
+    background-color: chartreuse;
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+.main > .foot{
+    background-color: blue;
+}
