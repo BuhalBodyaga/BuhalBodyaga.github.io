@@ -1,6 +1,5 @@
 .main{
     display: grid;
-    grid-template-rows: 25vh 70vh 5vh;
     margin: 0;
 }
 .main > .background{
@@ -43,8 +42,8 @@
 }
 
 .content  .item {
-    width: 400px;
-    height: 200px;
+    width: 350px;
+    height: 150px;
     background-color: blueviolet;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -62,7 +61,6 @@
     display: block;
     height: 100%;
     background-color: gold;
-    overflow: scroll;
 }
 .grid-text p{
     margin: 0;
@@ -74,6 +72,64 @@
     text-align: center;
 }
 
-.main > .foot{
+
+.main > .foot {
     background-color: blue;
+    border-top: 2px solid #000000;
+display: grid;
+    width: 100%;
+    padding-bottom: 0.7%;
+    padding-left: 1%;
+    vertical-align: middle;
+    text-align: center;
 }
+
+.personal-info, .contact-info {
+    display: inline-block;
+    box-sizing: border-box;
+margin: 0}
+
+.personal-info {
+    margin: 0;
+    float: left;
+}
+
+.contact-info {
+    margin-right: 2%;
+    float: right;
+}
+
+@media (max-width: 768px) {
+    .background .item {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .background {
+        display: none;
+    }
+.content .item{
+    width: 90%;
+    height: 80%;
+}
+    .item img {
+        width: 40%;
+    }
+
+    .main > .content {
+
+        width: 100%;
+        grid-gap:5px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .foot{
+
+    }
+    .personal-info{
+        text-align: left;
+    }
+    .contact-info{
+        text-align: right;
+    }
+}
+
