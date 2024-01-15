@@ -76,28 +76,32 @@
 .main > .foot {
     background-color: blue;
     border-top: 2px solid #000000;
-display: grid;
+    display: flex; /* Используем Flexbox вместо Grid */
+    justify-content: space-between; /* Распределение элементов вдоль оси X */
+    align-items: center;
     width: 100%;
     padding-bottom: 0.7%;
     padding-left: 1%;
-    vertical-align: middle;
     text-align: center;
 }
 
 .personal-info, .contact-info {
-    display: inline-block;
     box-sizing: border-box;
-margin: 0}
+    margin: 0;
+}
 
 .personal-info {
-    margin: 0;
-    float: left;
+    /* Убираем float и используем flex-grow для распределения места */
+    flex-grow: 1;
+    text-align: left; /* Текст слева */
 }
 
 .contact-info {
+    margin-left: auto; /* Двигаем контактную информацию вправо */
+    text-align: right; /* Текст справа */
     margin-right: 2%;
-    float: right;
 }
+
 
 @media (max-width: 768px) {
     .background .item {
@@ -123,7 +127,9 @@ margin: 0}
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     .foot{
-
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .personal-info{
         text-align: left;
